@@ -1,0 +1,52 @@
+:root {
+  --darkblue: #385170;
+  --lightblue: #9fd3c7;
+  --white: #ececec;
+}
+body {
+  background-color: var(--white);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#navbar {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  background-color: var(--darkblue);
+}
+
+.navButton {
+  height: 40px;
+  width: 60px;
+  background-color: var(--lightblue);
+  color: #ffffff;
+}
+#bookshelf {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px;
+}
+
+.book {
+  border: 2px solid var(--darkblue);
+  width: 200px;
+  padding: 5px;
+}
+
+#addBook {
+  visibility: hidden;
+}
+
+#footer {
+  height: 10%;
+  text-align: center;
+}
